@@ -169,6 +169,7 @@ function previewImageAndUpload(event) {
               'Content-Type': 'application/json',
               'Accept':'*/*',
             //   'Access-Control-Allow-Origin': 'http://localhost:5500',
+            'Access-Control-Allow-Headers':'Origin',
               'Access-Control-Allow-Origin': 'https://bitbricks-demo.herokuapp.com/',
               'Access-Control-Allow-Credentials': 'true'
             },
