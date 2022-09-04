@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js"></script>
+    <script src="https://unpkg.com/axios@0.24.0/dist/axios.min.js"></script>
+    <title>Add Socials</title>
+</head>
+
+<body>
+
+    <div class="parent-container">
+
+        <div class="add-socials-card">
+
+            <div class="add-explore-layout">
+
+                <button class="btn-add-new-socials">
+
+                    <text class="txt-add-new-socials" onclick="fetchDefaultPlaceholderCard()">
+                        Add new link
+                    </text>
+
+                </button>
+
+                <!-- <button class="btn-add-new-socials">
+
+                    <text class="txt-add-new-socials">
+                        Explore
+                    </text>
+
+                </button> -->
+
+            </div>
+
+            <div class="existing-socials-list" id="existing-socials-list">
+
+                <!-- <ul id="socials-list"> -->
+
+                    <!-- <li class="existing-social-card">
+
+                        <div class="existing-social-text-layout">
+
+                            <div class="existing-social-title">
+                                <p> Twitter </p>
+                                <img class="icon" src="../icons/icon_edit.png">
+                            </div>
+
+                            <div class="existing-social-url">
+                                <p>https://twitter.com/AnkitDe16412333</p>
+                                <img class="icon" src="../icons/icon_edit.png">
+                            </div>
+                        </div>
+
+                        <div class="existing-social-thumbnail">
+                            <img src="../logos/twitter-logo-60x60.svg">
+                        </div>
+
+                        <div class="existing-socials-cta-layout">
+
+                            <button class="btn-disable">
+                                Disable
+                            </button>
+
+                            <button class="btn-remove">
+                                Remove
+                            </button>
+
+                        </div>
+
+                    </li>
+
+                    <li class="existing-social-card">
+
+                        <div class="existing-social-text-layout">
+
+                            <div class="existing-social-title">
+                                <p> Discord </p>
+                                <img class="icon" src="../icons/icon_edit.png">
+                            </div>
+
+                            <div class="existing-social-url">
+                                <p>https://discord.com/channels/@me</p>
+                                <img class="icon" src="../icons/icon_edit.png">
+                            </div>
+                        </div>
+
+                        <div class="existing-social-thumbnail">
+                            <img src="../logos/discord-logo-60x60.svg">
+                        </div>
+
+                        <div class="existing-socials-cta-layout">
+
+                            <button class="btn-disable">
+                                Disable
+                            </button>
+
+                            <button class="btn-remove">
+                                Remove
+                            </button>
+
+                        </div>
+
+                    </li> -->
+
+                    <!-- <li class="add-new-social-card" id="new-social-card-template">
+
+                        <div class="existing-social-text-layout">
+
+                            <div class="existing-social-title">
+
+                                <input class="formField" type="text" placeholder="Title" name="social_title"
+                                    id="social_title" onfocus="formFieldFocused(this)" onblur="formFieldBlurred(this)"
+                                    oninput="onInputFieldEdited()" required>
+
+                                <img class="icon" src="../icons/icon_edit.png" id="edit-icon-title">
+                            </div>
+
+                            <div class="existing-social-url">
+                                <input class="formField" type="text" placeholder="URL" name="social_url" id="social_url"
+                                    onfocus="formFieldFocused(this)" onblur="formFieldBlurred(this)"
+                                    oninput="onInputFieldEdited()" required>
+
+                                <img class="icon" src="../icons/icon_edit.png" id="edit-icon-url">
+                            </div>
+                        </div>
+
+                        <div class="existing-social-thumbnail">
+                            <img src="../icons/thumbnail-placeholder.png" width="60" height="60">
+                        </div>
+
+                        <div class="existing-socials-cta-layout">
+
+                            <button class="btn-enable disabled" id="btn-enable" onclick="submitSocialsDetail()">
+                                Enable
+                            </button>
+
+                            <button class="btn-remove">
+                                Remove
+                            </button>
+
+                        </div>
+
+                    </li> -->
+
+                    <div class="no-socials-placeholder-text" id="no-socials-placeholder-text">
+                        <p>
+                            You haven't added any links to display.
+                        </p>
+
+                        <p>
+                            Click the button above to add one.
+                        </p>
+                    </div>
+
+                <!-- </ul> -->
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

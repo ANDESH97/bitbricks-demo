@@ -1,0 +1,175 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        h3 {
+            color: white;
+            text-align: center;
+        }
+
+        .social-cell {
+            background-color: #191A19;
+            margin-top: 12px;
+            margin-bottom: 12px;
+            border: 2px hidden;
+            border-radius: 20px;
+            width: 350px;
+            /* width: 100%; */
+            height: 50px;
+            display: flex;
+            position: relative;
+            /* justify-content: left; */
+            align-items: center;
+            /* aligns vertically */
+            flex-direction: row;
+        }
+
+        .social-image {
+            /* width: 36px; */
+            /* height: 36px; */
+            /* margin-left: 10px; */
+            /* float: left; */
+        }
+
+        .social-image-div {
+            width: 24px;
+            /* height: 24px; */
+            position: absolute;
+            left: 25;
+            /* top: 15; */
+            /* bottom: 25px; */
+            top: 50%;
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+
+        .social-text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+
+    <div class="social-dropdown">
+        <button onclick="toggleDropdown()" class="dropbtn">Connect</button>
+        <div id="socialDropdown" class="social-dropdown-list">
+
+            <div class="social-cell">
+                <div class="social-image-div">
+                    <img class="social-image" src="twitter-logo.svg" alt="Twitter">
+                </div>
+                <div class="social-text">
+                    <h3>
+                        Twitter
+                    </h3>
+                </div>
+            </div>
+
+            <div class="social-cell">
+                <div class="social-image-div">
+                    <img class="social-image" src="facebook-logo.svg" alt="Facebook">
+                </div>
+                <div class="social-text">
+                    <h3>
+                        Facebook
+                    </h3>
+                </div>
+            </div>
+
+            <!-- <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a> -->
+        </div>
+    </div>
+
+    <div class="social-cell">
+        <div class="social-image-div">
+            <img class="social-image" src="twitter-logo.svg" alt="Twitter">
+        </div>
+        <div class="social-text">
+            <h3>
+                Twitter
+            </h3>
+        </div>
+    </div>
+
+    <div class="social-cell">
+        <div class="social-image-div">
+            <img class="social-image" src="facebook-logo.svg" alt="Facebook">
+        </div>
+        <div class="social-text">
+            <h3>
+                Facebook
+            </h3>
+        </div>
+    </div>
+
+    <div class="social-cell">
+        <div class="social-image-div">
+            <img class="social-image" src="google-logo.svg" alt="Google">
+        </div>
+        <div class="social-text">
+            <h3>
+                Google
+            </h3>
+        </div>
+    </div>
+
+    <div class="social-cell">
+        <div class="social-image-div">
+            <img class="social-image" src="reddit-logo.svg" alt="Reddit">
+        </div>
+        <div class="social-text">
+            <h3>
+                Reddit
+            </h3>
+        </div>
+    </div>
+
+    <div class="social-cell">
+        <div class="social-image-div">
+            <img class="social-image" src="discord-logo.svg" alt="Discord">
+        </div>
+        <div class="social-text">
+            <h3>
+                Discord
+            </h3>
+        </div>
+    </div>
+
+    <script>
+
+        /* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+        function toggleDropdown() {
+            document.getElementById("socialDropdown").classList.toggle("show");
+        }
+
+        function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+    </script>
+</body>
+
+</html>

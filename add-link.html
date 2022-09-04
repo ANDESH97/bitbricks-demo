@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .add-social-connect {
+            background-color: #191A19;
+            margin-top: 12px;
+            margin-bottom: 12px;
+            border: 2px hidden;
+            border-radius: 30px;
+            width: 250px;
+            /* width: 100%; */
+            height: 50px;
+            /* display: flex; */
+            /* position: relative; */
+            /* align-items: center; */
+            /* flex-direction: row; */
+        }
+        .add-link-btn {
+            margin: auto;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            background-color: transparent;
+            font-size: 16px;
+            color: white;
+            border: none;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- <input type="text" id="myInput" placeholder="Title..."> -->
+
+    <div id="myDIV" class="header">
+        <input type="text" id="myInput" placeholder="Title...">
+        <span onclick="addNewConnectInputElement()" class="addBtn">Add</span>
+    </div>
+
+    <div>
+        <input type="text" id="myInput" placeholder="Description...">
+        <input type="text" id="myInput" placeholder="logo...">
+    </div>
+
+
+    <div class="add-social-connect" id="addSocialConnect">
+        <button onclick="addNewConnectInputElement()" type="button" class="add-link-btn">
+            Add new link
+        </button>
+    </div>
+
+    <script>
+        
+        function addNewConnectInputElement() {
+            console.log("button clicked");
+            alert("yo yo bunta singh");
+        }
+    </script>
+</body>
+
+</html>

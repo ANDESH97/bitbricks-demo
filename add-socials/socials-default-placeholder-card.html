@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+        <div class="existing-social-text-layout">
+    
+            <div class="existing-social-title">
+    
+                <input class="formField" type="text" placeholder="Title" name="social_title"
+                    id="social_title" onfocus="formFieldFocused(this)" onblur="formFieldBlurred(this)"
+                    oninput="onInputFieldEdited()" required>
+    
+                <img class="icon" src="../icons/icon_edit.png" id="edit-icon-title">
+            </div>
+    
+            <div class="existing-social-url">
+                <input class="formField" type="url" placeholder="URL" name="social_url" id="social_url"
+                    onfocus="formFieldFocused(this)" onblur="formFieldBlurred(this)"
+                    oninput="onInputFieldEdited()" required>
+    
+                <img class="icon" src="../icons/icon_edit.png" id="edit-icon-url">
+            </div>
+        </div>
+    
+        <div class="existing-social-thumbnail" id="existing-social-thumbnail">
+            <input type="file" id="imageUpload" accept="image/*" style="display: none;" onchange="previewImageAndUpload(event);">
+            <!-- <input type="file" id="imageUpload" accept=".png, .jpg, .jpeg" style="display: none;" onchange="previewImageAndUpload(event);"> -->
+            <img src="../icons/thumbnail-placeholder.png" width="60" height="60" onclick="selectImage()" id="thumbnail-preview">
+        </div>
+    
+        <div class="existing-socials-cta-layout">
+    
+            <button class="btn-enable disabled" id="btn-enable" onclick="submitSocialsDetail()">
+                Enable
+            </button>
+    
+            <button class="btn-remove" onclick="removeSocial()">
+                Remove
+            </button>
+    
+        </div>
+    
+</body>
+</html>

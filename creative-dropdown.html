@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Dropdown</title>
+
+    <style>
+        body {
+            background-color: #121212;
+            font-family: "Open Sans", sans-serif;
+        }
+
+        /* li a {
+            text-decoration: none;
+            color: #2d2f31;
+        } */
+
+
+        nav {
+            width: 100px;
+            background: transparent;
+            margin: auto;
+            /* margin: 10px auto; */
+        }
+
+        span {
+            padding: 10px;
+            background: #2d2f31;
+            color: white;
+            /* font-size: 1.2em;
+            font-variant: small-caps; */
+            /* cursor: pointer; */
+            display: block;
+        }
+
+        /* span::after {
+            float: left;
+            right: 2%;
+            content: "+";
+        } */
+
+        .slide {
+            /* clear: both; */
+            width: 100%;
+            height: 0px;
+            overflow: hidden;
+            text-align: center;
+            /* align-items: center; */
+            transition: height .4s ease;
+        }
+
+        .slide li {
+            padding: 10px;
+        }
+
+        #touch {
+            position: absolute;
+            opacity: 1;
+            height: 10px;
+        }
+
+        #touch:checked+.slide {
+            height: 300px;
+        }
+
+        .social-cell {
+            background-color: transparent;
+            /* margin-top: 12px; */
+            /* margin-bottom: 12px; */
+            /* border: 2px hidden; */
+            /* border-radius: 20px; */
+            width: 100%;
+            /* width: 100%; */
+            /* height: 50px; */
+            /* display: flex; */
+            /* position: relative; */
+            /* justify-content: left; */
+            align-items: center;
+            /* aligns vertically */
+            /* flex-direction: row; */
+        }
+
+        .social-image-div {
+            /* width: 24px; */
+            /* height: 24px; */
+            /* position: absolute; */
+            /* left: 25; */
+            /* top: 15; */
+            /* bottom: 25px; */
+            /* top: 50%;
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%); */
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+
+        <label for="touch"><span></span></label>
+        <!-- <label><span></span></label> -->
+
+        
+        <input type="checkbox" id="touch">
+
+        <ul class="slide" style="list-style-type:none;">
+            <li>
+                <a href="#">
+                    <div class="social-cell">
+                        <div class="social-image-div">
+                            <img class="social-image" src="twitter-logo.svg" alt="Twitter">
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="social-image-div">
+                        <img class="social-image" src="facebook-logo.svg" alt="Facebook">
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="social-image-div">
+                        <img class="social-image" src="google-logo.svg" alt="Google">
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="social-image-div">
+                        <img class="social-image" src="reddit-logo.svg" alt="Reddit">
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="social-image-div">
+                        <img class="social-image" src="discord-logo.svg" alt="Discord">
+                    </div>
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</body>
+
+</html>

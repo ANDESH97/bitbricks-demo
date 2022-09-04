@@ -1,0 +1,248 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #121212;
+}
+
+.parent-container {
+    /* margin: 25px; */
+    /* width: 350px; */
+    width: 99%;
+    /* height: 200px; */
+    /* height: max-content; */
+    position: absolute;
+    height: 99%;
+    /* outline: dashed 1px black; */
+    /* Center child horizontally*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-socials-card {
+    width: 944px;
+    height: 636px;
+    background-color: rgba(57, 62, 70, 0.5);
+    border-radius: 10px;
+    overflow-y: scroll;
+    /* overflow: scroll; */
+    /* display: none; */
+    /* overflow: hidden; */
+}
+
+.add-socials-card::-webkit-scrollbar {
+    display: none;
+}
+
+.add-socials-card {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.add-explore-layout {
+    width: 100%;
+    height: auto;
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-add-new-socials {
+    width: 350px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0092CA;
+    border-radius: 15px;
+    text-align: center;
+    border: none;
+    margin-inline: 50px;
+}
+
+.txt-add-new-socials {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    color: #EEEEEE;
+}
+
+.existing-social-card {
+    background: #393E46;
+    border-radius: 15px;
+    width: auto;
+    height: 175px;
+    margin-top: 30px;
+    margin-left: 72px;
+    margin-right: 72px;
+    display: flex;
+    position: relative;
+}
+
+.add-new-social-card {
+    background: #393E46;
+    border-radius: 15px;
+    width: auto;
+    height: 175px;
+    margin-top: 30px;
+    margin-left: 72px;
+    margin-right: 72px;
+    display: flex;
+    position: relative;
+}
+
+.existing-social-text-layout {
+    width: max-content;
+    margin-top: 27px;
+    margin-left: 35px;
+    font-family: 'Arial';
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+}
+
+.existing-social-title {
+    position: inherit;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+}
+
+.existing-social-url {
+    position: inherit;
+    font-size: 18px;
+    line-height: 21px;
+    margin-top: 16px;
+    display: flex;
+}
+
+.existing-social-thumbnail {
+    position: absolute;
+    right: 40px;
+    top: 28px;
+    /* float: right; */
+    /* display: flex;
+    justify-content: end; */
+}
+
+.existing-socials-cta-layout {
+    /* position: absolute; */
+    width: 100%;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.btn-disable {
+    position: absolute;
+    background-color: #DA0037;
+    border: none;
+    border-radius: 20px;
+    width: 328px;
+    height: 48px;
+    left: 30px;
+    bottom: 12px;
+    /* text properties */
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.btn-enable {
+    position: absolute;
+    background-color: #29A19C;
+    border: none;
+    border-radius: 20px;
+    width: 328px;
+    height: 48px;
+    left: 30px;
+    bottom: 12px;
+    /* text properties */
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.btn-remove {
+    position: absolute;
+    background: rgba(238, 238, 238, 0.1);
+    border: none;
+    border-radius: 20px;
+    width: 328px;
+    height: 48px;
+    right: 30px;
+    bottom: 12px;
+    /* text properties */
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 12px;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+    width: 100%;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.no-socials-placeholder-text {
+    /* text properties */
+    margin-top: 40px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 40px;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.formField {
+    background: transparent;
+    border: 0;
+    outline: 0;
+    font-size: 20px;
+    padding: 0px;
+    color: white;
+}
+
+.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
