@@ -2,11 +2,11 @@ var express = require('express');
 var app = express();
 var path = require('path');
 
-app.use(express.static(path.join(__dirname)));
+app.use(express.static(path.join(__dirname + '/add-socials/')));
 
 app.get('/', function (req, res) {
   console.log("home");
-  res.sendFile(path.join(__dirname + 'add-socials/add-socials-popup.html'));
+  res.sendFile(path.join(__dirname + '/add-socials/add-socials-popup.html'));
 });
 
 // app.get('/.well-known/apple-app-site-association', function (req, res) {
