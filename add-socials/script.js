@@ -1,37 +1,22 @@
 function formFieldFocused(inputElement) {
+    document.getElementById(inputElement.id).setAttribute('size', '60');
     const name = inputElement.name.substring(7);
     var elementIdToHide = "edit-icon-".concat(name);
     var editIcon = document.getElementById(elementIdToHide);
     editIcon.style.display = "none";
-
-    // const titleInputElementName = "social_title";
-    // const urlInputElementName = "social_url";
-
-    // if (titleInputElementName && titleInputElementName.value.length > 0 && urlInputElementName && urlInputElementName.value.length > 0) {
-    //     const enableButton = document.getElementById("btn-enable");
-    //     enableButton.disabled = false;
-    //     enableButton.style.opacity = 1.0;
-    // }
 }
 
 function onInputFieldEdited() {
     const enableButton = document.getElementById("btn-enable");
     enableButton.disabled = false;
     enableButton.style.opacity = 1.0;
-
-    // const titleInputElementName = document.getElementById("social_title");
-    // const urlInputElementName = document.getElementById("social_url");
-
-    // if (titleInputElementName && titleInputElementName.value.length > 0 && urlInputElementName && urlInputElementName.value.length > 0) {
-    //     const enableButton = document.getElementById("btn-enable");
-    //     enableButton.disabled = false;
-    //     enableButton.style.opacity = 1.0;
-    // }
 }
 
 function formFieldBlurred(inputElement) {
 
     if (inputElement.value.length == 0) {
+        
+        document.getElementById(inputElement.id).setAttribute('size', '20');
         var elementToDisplay = "edit-icon-".concat(inputElement.name.substring(7));
         var editIcon = document.getElementById(elementToDisplay);
         editIcon.style.display = "block";
@@ -170,8 +155,8 @@ function previewImageAndUpload(event) {
               'Accept':'*/*',
             //   'Access-Control-Allow-Origin': 'http://localhost:5500',
             // 'Access-Control-Allow-Headers':'Origin',
-            'Access-Control-Request-Headers':'Origin',
-              'Access-Control-Allow-Origin': 'https://bitbricks-demo.herokuapp.com/',
+            // 'Access-Control-Request-Headers':'Origin',
+            //   'Access-Control-Allow-Origin': 'https://bitbricks-demo.herokuapp.com/',
               'Access-Control-Allow-Credentials': 'true'
             },
             data : data
