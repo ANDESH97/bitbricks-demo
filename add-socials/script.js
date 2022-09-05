@@ -152,12 +152,12 @@ function previewImageAndUpload(event) {
             url: 'https://zswm2a102j.execute-api.us-east-1.amazonaws.com/dev/socials/upload',
             headers: { 
               'Content-Type': 'application/json',
-              'Accept':'*/*',
+            //   'Accept':'*/*',
             //   'Access-Control-Allow-Origin': 'http://localhost:5500',
             // 'Access-Control-Allow-Headers':'Origin',
             // 'Access-Control-Request-Headers':'Origin',
             //   'Access-Control-Allow-Origin': 'https://bitbricks-demo.herokuapp.com/',
-              'Access-Control-Allow-Credentials': 'true'
+            //   'Access-Control-Allow-Credentials': 'true'
             },
             data : data
           };
